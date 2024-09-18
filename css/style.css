@@ -1,0 +1,128 @@
+:root {
+    --grad: linear-gradient(
+        var(--prim), var(--sec)
+    );
+    --mainFont: "Rubik", sans-serif;
+    --prim: #005a9c;
+    --sec: #74a57f;
+    --tert: #eaeae3;
+}
+
+* { box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--tert);
+}
+
+.banner-image {
+    height: 20vh;
+}
+
+.buy-btn {
+    color: var(--tert);
+    background-color: var(--sec);
+}
+
+.buy-btn:hover {
+    color: var(--sec);
+    border-color: var(--sec);
+}
+
+.card-h2 {
+    color: var(--prim);
+}
+
+.cart-btn {
+    color: var(--tert);
+    background-color: var(--prim);
+}
+
+.cart-btn:hover {
+    color: var(--prim);
+    border-color: var(--prim);
+}
+
+.footer-heading, .list-link {
+    color: #fff;
+}
+
+.footer-heading {
+    font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.header-link {
+    color: var(--tert);
+}
+
+.header-link:hover {
+    color: var(--sec);
+    border: 1px solid var(--sec);
+    border-radius: 5px;
+}
+
+.lead-items {
+    border-color: var(--sec);
+}
+
+.list-link {
+    text-decoration: none;
+}
+
+.list-link:hover {
+    text-decoration: underline;
+}
+
+.my-card-header {
+    background-color: var(--sec);
+}
+
+.promo-image {
+    box-shadow: 2px 2px 2px #aaa;
+}
+
+#footer {
+    padding: 20px 0;
+    background-color: var(--prim);
+}
+
+#footerSection1 {
+    padding: 20px 0;
+    background-color: var(--prim);
+    background-image: linear-gradient(
+        var(--prim) 60%, var(--sec) 
+    );
+}
+
+#footerSection2 {
+    background-color: var(--sec);
+}
+
+#footerSection3 {
+    background-color: var(--prim);
+    background-image: linear-gradient(
+        var(--sec), var(--prim)60%
+    );
+}
+
+#header {
+    padding-top: 20px;
+    background-color: var(--prim);
+}
+
+#logo {
+    margin: 0;
+    font-family: var(--mainFont);
+    font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1600 - 300)));
+}
+
+#section1 {
+    padding: 8px 0;
+    background-color: var(--prim);
+}
+
+#section2 {
+    background-color: var(--prim);
+    background-image: var(--grad);
+}
